@@ -1,0 +1,16 @@
+DIJKINSPECTIE 0.2 – bestanden voor je bestaande GitHub fork
+
+1. Upload app.py en requirements.txt naar de HOOFDMAP van jouw fork.
+2. GitHub vraagt om bestaande bestanden te vervangen: bevestig het committen.
+3. Streamlit Community Cloud zal automatisch opnieuw deployen.
+4. Upload een foto. Indien je een bijpassend pixelmasker hebt, upload het ook als PNG.
+5. De rode markering is een VISUALISATIE van het masker, GEEN nieuwe AI-detectie.
+
+Bestand model_adapter.example.py beschrijft alleen hoe een AI-model later wordt gekoppeld.
+NIET hernoemen naar model_adapter.py; het is niet uitvoerbare detectiecode.
+
+Voor echte AI-inferentie ontbreken nog bevestigde modelgewichten en een
+geverifieerde aanroep van de oorspronkelijke scheurdetectiecode uit de toolbox.
+De publieke STOWA-documentatie omschrijft het model als een U-Net-segmentatiemodel.
+
+Gebruik geen gevoelige operationele inspectiebeelden op publieke gratis hosting.
