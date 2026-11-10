@@ -1,0 +1,17 @@
+DIJKINSPECTIE v0.4 - ORIGINEEL STOWA U-NET MODEL
+
+1. Upload app.py en requirements.txt in de ROOT van je bestaande GitHub-fork.
+   Vervang de bestaande bestanden. Upload NIET opnieuw de hele repository.
+2. Zorg dat de bestaande map scripts/scheur-detectie/saved_weights/
+   model_v2_plateau/BATCHSIZE_80_LR_0.0001_EPOCH_150_Fold_4/
+   de bestanden saved_model.pb EN variables/ bevat.
+   In variables/ horen de TensorFlow weight data (.data-...) en index (.index) bestanden.
+3. Open Streamlit Community Cloud, herstart de app als nodig en kies Python 3.11
+   in de appinstellingen indien je huidige Python-versie niet compatibel is.
+4. Upload een foto en klik 'Analyseer scheuren met STOWA-model'.
+5. Bij een fout: kopieer de volledige melding / Cloud-logs. Het model is nog
+   niet in de gratis hostingomgeving integraal getest.
+
+LET OP: Alleen demonstratie; geen inzet voor waterveiligheidsbesluiten.
+De originele notebook code past 256x256 blokken toe. Deze versie verwerkt
+ook JPG/PNG, wat qua trainingsdomein mogelijk afwijkt van droneorthofoto's.
