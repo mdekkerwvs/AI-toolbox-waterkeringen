@@ -1,7 +1,23 @@
-# AI-toolbox-waterkeringen
+# Dijkinspectie – Streamlit proefinterface
 
-Dit is een initiatief van HHNK, het PIW-programma van STOWA en RWS-WVL en HKV. We willen hiermee beheer en onderhoud van waterkeringen efficiënter en effectiever maken.
+Deze versie biedt foto-upload en weergave; **de echte AI-scheurdetectie is nog niet aangesloten**.
 
-Waterschappen inspecteren jaarlijks vele duizenden kilometers waterkeringen. Om inzicht te krijgen in actuele sterkte van waterkeringen wordt het steeds belangrijker om te kijken naar verschillen in conditie ten opzichte van de uitgangspunten van de toetsing en beoordeling. Dit soort inspecties zijn arbeidsintensief. Beheerders geven aan dat het handmatig vastleggen van schadebeelden en het verwerken van inspecties zeer veel tijd kost. Onze algoritmes bieden daarvoor een oplossing door consequent foto’s te vertalen naar informatie over degradatie, schadebeelden en veranderingen.
+## Online publiceren
 
-De AI toolbox is een open ontwikkeling. Heb je vragen of wil je meewerken aan nieuwe ontwikkelingen, neem dan contact met ons op.
+1. Maak een GitHub-repository (of fork de AI Toolbox Waterkeringen).
+2. Upload `app.py` en `requirements.txt` naar de hoofdmap van die repository.
+3. Open https://share.streamlit.io, kies **Create app**, selecteer repository, branch `main`, en bestand `app.py`.
+4. Publiceer de app. Voor een privacygevoelige toepassing is een publieke gratis demo niet geschikt.
+
+## Lokaal testen
+
+```bash
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+## Echte AI toevoegen
+
+Controleer eerst in de originele repository welke inferentiescripts, getrainde modelgewichten, preprocessing, en licentievoorwaarden beschikbaar zijn. Implementeer daarna een gevalideerde `predict(image)`-functie en voeg modelafhankelijke packages toe aan `requirements.txt`. Markeer detectieresultaten duidelijk als modelvoorspellingen die een menselijke inspectie vereisen.
+
+Bronproject: https://github.com/AI-Toolbox-Waterkeringen/AI-toolbox-waterkeringen
